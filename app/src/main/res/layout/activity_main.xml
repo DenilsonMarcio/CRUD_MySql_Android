@@ -194,5 +194,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editHistoria" />
 
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Listar Contatos"
+        android:onClick="listar"
+        app:layout_constraintEnd_toStartOf="@+id/txtRodape1"
+        app:layout_constraintStart_toEndOf="@+id/btnLimpar"
+        app:layout_constraintTop_toBottomOf="@+id/editHistoria" />
+
 </android.support.constraint.ConstraintLayout>
 </ScrollView>

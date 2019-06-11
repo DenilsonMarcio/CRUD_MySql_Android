@@ -1,16 +1,19 @@
 package com.moppahtech.crud_mysql_android;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.IOException;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.HttpUrl;
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView txtAviso,txtRodape1;
     EditText editNome, editContato, editEmail, editHistoria, editId;
-    Button btnSalvar, btnatualizar, btnPesquisar,btnExcluir;
+    Button btnSalvar, btnatualizar, btnPesquisar,btnExcluir, btnListar;
 
     public void limpar (View view){
 
@@ -61,7 +64,13 @@ public class MainActivity extends AppCompatActivity {
         btnatualizar = findViewById(R.id.btnatualizar);
         btnPesquisar = findViewById(R.id.btnPesquisar);
         btnExcluir = findViewById(R.id.btnExcluir);
+        btnListar = findViewById(R.id.btnListar);
     }
+
+        public void listar(View view){
+
+        }
+
         public void salvar (View view){
 
 
